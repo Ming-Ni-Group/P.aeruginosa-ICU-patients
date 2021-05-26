@@ -1,5 +1,4 @@
-# title
-Whole-genome sequence characterization of longitudinal Pseudomonas aeruginosa isolates from long-term inpatients in intense care units
+# Whole-genome sequence characterization of longitudinal Pseudomonas aeruginosa isolates from long-term inpatients in intense care units
 
 
 ## summary
