@@ -1,5 +1,5 @@
 # title
-
+Whole-genome sequence characterization of longitudinal Pseudomonas aeruginosa isolates from long-term inpatients in intense care units
 
 
 ## summary
@@ -25,11 +25,10 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 ## Repo Contents
 
-- meta-data: sample data and preprocessed data used for analysis.
+- meta-data 
 
-  1. PA ref genome
-  2. genomes of the other bacteria 
-  3. samples' information file
+  1. reference genomes used in the analysis
+  2. samples' information file
 
 - results:  The results from the 
 
