@@ -35,37 +35,31 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 ## iSNVs and SNPs calling and annotation
 
-1. Map the WGS reads to the reference genome :
+1. Map the NGS reads to the reference genome (snakemake pipeline):
 
-   using snakemake 
+   `snakemake -s  NGS_map_PAO1-pipeline.py -p `
 
-   `snakemake -s  NGS_map_PAO1-pipeline.py`
+2. iSNVs and SNPs calling (snakemake pipeline):
 
-2. iSNVs and SNPs calling :
-
-   `snakemake -s iSNV_calling-pipeline.py `
+   `snakemake -s iSNV_calling-pipeline.py -p ` 
    
-   (This can also generate the stat of the iSNVs and SNPs, samples' genomes replaced the SNPs cites)
+   This script is used to call the iSNVs and SNPs , generate the summary state of the iSNVs and SNPs
    
 3. Annotation of iSNVs and SNPs  by using SnpEff :
 
-   - Convert iSNV table into vcf format(VCFv4.1) : 
+   - Convert the iSNVs and SNP table into vcf format(VCFv4.1) : 
      
-     `python  iSNVTable_2_vcf_allsample.py  -i  $   -o $allsamplesVcfPath   -r   MN908947.3`
+     `python  iSNVTable_2_vcf_allsample.py  -i  $   -o $allsamplesVcfPath   -r   $ref_ID `
      
    - Annoting the iSNVs and SNPs :
      
-      `java -jar snpEff.jar ann  $referenceID   $vcf_file    >$outputFile_vcf`
+      `java -jar snpEff.jar ann  $referenceID   $vcf_file  --protein  $ref_database_ID   >$outputFile_vcf`
 
-## Repeat regions in the reference genome
+## Repeat regions identification of the reference genome
 
-- cut the ref genome to 150bp simulation sequences:
+- cut the ref genome to 150bp simulation sequences by step 1:
 
   `python  PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s $cutStep -l $readLength `
-
-- map the  simulation reads to the other bacteria genomes
-
-  `snakemake -s simuReads_mapTo_PARefAE0049-pipeline.py`
 
 - align the simulated reads to the reference genome using blastn
 1. build the database for blast
@@ -74,6 +68,10 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 `blastn -db  $databaseID  -query  $simmulate_reads_fastaFile   -outfmt 6 -num_threads 4`
 - Find the regions that may be repeat regions of the reference genome
   `python 20210405-PA-simulateReads-mapToPArefAE004091-filt-RepeatRegion.py -i $blastOutfile  -o $output_file(PA.RepeatRegion-Cov30-identy60.Posi.txt) -r $referenceGenomeID `
+  
+- map the  simulation reads to the PAO1 reference genome 
+
+  `snakemake -s simuReads_mapTo_PARefAE0049-pipeline.py`
 
 ## Identity the homo regions with other bacteria
 - Cut the ref genome to 150bp simulate sequences:
@@ -83,19 +81,16 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
   `snakemake -s simuPA_mapTo_allBacteriaRefGnms-pipeline.py`
 
-- Find the homo regions with other bacteria
+- Find the homologous regions between the PAO1 reference genome of P.aeruginosa  and the reference genomes of other bacteria
 `python PA-simulateReads-find-homoRegions.py -i $bamFile_simulateReadsMapToOtherbacteriaGenome -o $output_file -r $reference_ID`
 
 
 ## Phylogenetic analysis
 
-- Prepare the  aligned sequences based on SNPs cites:
-
-` python generate-sequences-of SNPs-cites.py -i $iSNV_SNP_table_Path  -f $Samps_info_file    -s  $path_of_Annotionedfiles_by_snpeff  -R $repeatRegionsCites -E $HomoRegionsCites  -o $output_path    -M  0.9  -n $ntfreqFiles_path`
-
 - Phylogenetic analysis
 
-`raxmlHPC-PTHREADS -s $align_SNPs_file -n raxmltree_result -m GTRGAMMAI -f a -x 12345 -N 1000 -p 123456 -T 24 -k`
+`raxmlHPC-PTHREADS -s $aligned_seq_file -n raxmltree_result -m GTRGAMMAI -f a -x 12345 -N 1000 -p 123456 -T 24 -k`
+
 
 ## Genome assembly
 
@@ -105,13 +100,15 @@ genome assembly was conducted by using Spades:
 
 
 
-## Identity of Indels 
+## Identification of indels and structural variations
+Analysis was conducted based on the alignment file of the NGS reads
 
 - Indels calling with Pindel:
 
   `snakemake -s `
 
 - Indels calling with Delly
+ 
 
 - Filt the Indels (shared by both results of the two softwares)
 
