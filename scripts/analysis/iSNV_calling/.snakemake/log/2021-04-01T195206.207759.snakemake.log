@@ -1,0 +1,92 @@
+The flag 'directory' used in rule consensusGnm_prokkaAnno is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	11	convert_iSNVpytable_To_vcf
+	11	ntfreq_2_FreqBigtable
+	23
+
+[Thu Apr  1 19:52:06 2021]
+rule ntfreq_2_FreqBigtable:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2_ntfreq_file_list.txt, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/out.samps-ntfreq.bigtable.txt
+    jobid: 6
+    wildcards: person=P5_withP2
+
+python /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/step6_read_ntfreq.py  -i  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2_ntfreq_file_list.txt -r /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  -o /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2  		-D  50 -A 5 -N 100 -F 0.02 -S 0.0 
+[Thu Apr  1 20:00:55 2021]
+Finished job 6.
+1 of 23 steps (4%) done
+
+[Thu Apr  1 20:00:55 2021]
+rule convert_iSNVpytable_To_vcf:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/out.samps-ntfreq.bigtable.txt, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/vcf
+    jobid: 18
+    wildcards: person=P5_withP2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNVtable_To_vcf.py   -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt  		-n /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/out.samps-ntfreq.bigtable.txt  -r  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5_withP2/vcf -m 0.05  
+[Thu Apr  1 20:01:37 2021]
+Finished job 18.
+2 of 23 steps (9%) done
+
+[Thu Apr  1 20:01:37 2021]
+rule ntfreq_2_FreqBigtable:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3_ntfreq_file_list.txt, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/out.samps-ntfreq.bigtable.txt
+    jobid: 2
+    wildcards: person=P3
+
+python /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/step6_read_ntfreq.py  -i  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3_ntfreq_file_list.txt -r /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  -o /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3  		-D  50 -A 5 -N 100 -F 0.02 -S 0.0 
+[Thu Apr  1 20:09:32 2021]
+Finished job 2.
+3 of 23 steps (13%) done
+
+[Thu Apr  1 20:09:32 2021]
+rule convert_iSNVpytable_To_vcf:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/out.samps-ntfreq.bigtable.txt, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/vcf
+    jobid: 14
+    wildcards: person=P3
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNVtable_To_vcf.py   -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/all.iSNV_with_SNP.pyResults.txt  		-n /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/out.samps-ntfreq.bigtable.txt  -r  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3/vcf -m 0.05  
+[Thu Apr  1 20:10:10 2021]
+Finished job 14.
+4 of 23 steps (17%) done
+
+[Thu Apr  1 20:10:10 2021]
+rule ntfreq_2_FreqBigtable:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1_ntfreq_file_list.txt, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/out.samps-ntfreq.bigtable.txt
+    jobid: 1
+    wildcards: person=P1
+
+python /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/step6_read_ntfreq.py  -i  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1_ntfreq_file_list.txt -r /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  -o /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1  		-D  50 -A 5 -N 100 -F 0.02 -S 0.0 
+[Thu Apr  1 20:17:35 2021]
+Finished job 1.
+5 of 23 steps (22%) done
+
+[Thu Apr  1 20:17:35 2021]
+rule convert_iSNVpytable_To_vcf:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/out.samps-ntfreq.bigtable.txt, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf
+    jobid: 13
+    wildcards: person=P1
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNVtable_To_vcf.py   -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt  		-n /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/out.samps-ntfreq.bigtable.txt  -r  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf -m 0.05  
+Terminating processes on user request, this might take some time.
+[Thu Apr  1 20:17:41 2021]
+Error in rule convert_iSNVpytable_To_vcf:
+    jobid: 13
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf
+    shell:
+        python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNVtable_To_vcf.py   -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt  		-n /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/out.samps-ntfreq.bigtable.txt  -r  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf -m 0.05  
+        (exited with non-zero exit code)
+
+Removing output files of failed job convert_iSNVpytable_To_vcf since they might be corrupted:
+/shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-04-01T195206.207759.snakemake.log

@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	convert_iSNVpytable_To_vcf
+	2
+Select jobs to execute...
+
+[Sat Mar 13 12:12:37 2021]
+rule convert_iSNVpytable_To_vcf:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/out.samps-ntfreq.bigtable.txt, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/vcf
+    jobid: 2
+    wildcards: person=P2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNVtable_To_vcf.py   -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/all.iSNV_with_SNP.pyResults.txt  		-n /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/out.samps-ntfreq.bigtable.txt  -r  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/vcf -m 0.05  
+[Sat Mar 13 12:12:46 2021]
+Finished job 2.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Sat Mar 13 12:12:47 2021]
+localrule all:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/vcf
+    jobid: 0
+
+[Sat Mar 13 12:12:47 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-03-13T121237.433294.snakemake.log

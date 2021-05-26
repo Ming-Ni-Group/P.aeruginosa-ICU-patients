@@ -1,0 +1,137 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	9	iSNV_freq_distribut
+	10
+Select jobs to execute...
+
+[Thu Mar 11 10:44:03 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P7_withP2/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P7_withP2/snvFreq_distribut_Stat
+    jobid: 18
+    wildcards: person=P7_withP2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P7_withP2/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P7_withP2/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:08 2021]
+Finished job 18.
+1 of 10 steps (10%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:08 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P7/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P7/snvFreq_distribut_Stat
+    jobid: 16
+    wildcards: person=P7
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P7/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P7/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:12 2021]
+Finished job 16.
+2 of 10 steps (20%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:12 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5/snvFreq_distribut_Stat
+    jobid: 14
+    wildcards: person=P5
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P5/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P5/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:22 2021]
+Finished job 14.
+3 of 10 steps (30%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:23 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/snvFreq_distribut_Stat
+    jobid: 11
+    wildcards: person=P2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:24 2021]
+Finished job 11.
+4 of 10 steps (40%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:24 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/snvFreq_distribut_Stat
+    jobid: 17
+    wildcards: person=P5_withP2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:35 2021]
+Finished job 17.
+5 of 10 steps (50%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:35 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/snvFreq_distribut_Stat
+    jobid: 15
+    wildcards: person=P6
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:39 2021]
+Finished job 15.
+6 of 10 steps (60%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:39 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/snvFreq_distribut_Stat
+    jobid: 13
+    wildcards: person=P4
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:44 2021]
+Finished job 13.
+7 of 10 steps (70%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:44 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P1/snvFreq_distribut_Stat
+    jobid: 10
+    wildcards: person=P1
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P1/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:44:53 2021]
+Finished job 10.
+8 of 10 steps (80%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:44:53 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P3/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P3/snvFreq_distribut_Stat
+    jobid: 12
+    wildcards: person=P3
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P3/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P3/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+[Thu Mar 11 10:45:05 2021]
+Finished job 12.
+9 of 10 steps (90%) done
+Select jobs to execute...
+
+[Thu Mar 11 10:45:05 2021]
+localrule all:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P3/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P5/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P7/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P7_withP2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/P1/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P2/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P3/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P5/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P7/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/person_ntfreq_tables/P7_withP2/snvFreq_distribut_Stat
+    jobid: 0
+
+[Thu Mar 11 10:45:05 2021]
+Finished job 0.
+10 of 10 steps (100%) done
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-03-11T104403.817629.snakemake.log

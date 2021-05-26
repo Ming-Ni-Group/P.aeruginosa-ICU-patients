@@ -1,0 +1,3 @@
+CreateRuleException in line 107 of /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNV_calling-pipeline.py:
+The name iSNV_freq_distribut is already used by another rule
+  File "/shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNV_calling-pipeline.py", line 107, in <module>

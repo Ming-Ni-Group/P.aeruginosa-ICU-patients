@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 74 of /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNV_calling-pipeline.py:
+Missing input files for rule convert_iSNVpytable_To_vcf:
+/shared/liuhj/tonglv/process/person_ntfreq_tables/P2/out.samps-ntfreq.bigtable.txt

@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules iSNV_SNP_consensusGnm and convert_iSNVpytable_To_vcf are ambiguous for the file /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/vcf.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	iSNV_SNP_consensusGnm: person=P4
+	convert_iSNVpytable_To_vcf: person=P4
+Expected input files:
+	iSNV_SNP_consensusGnm: /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/all.iSNV_with_SNP.pyResults.txt /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/out.samps-ntfreq.bigtable.txt /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna
+	convert_iSNVpytable_To_vcf: /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/all.iSNV_with_SNP.pyResults.txt /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/out.samps-ntfreq.bigtable.txt /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fnaExpected output files:
+	iSNV_SNP_consensusGnm: /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/vcf
+	convert_iSNVpytable_To_vcf: /shared/liuhj/tonglv/process/person_ntfreq_tables/P4/vcf

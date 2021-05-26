@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	iSNV_SameDateSampsCompare_consensus
+	2
+Select jobs to execute...
+
+[Fri Mar 12 10:51:54 2021]
+rule iSNV_SameDateSampsCompare_consensus:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5, /shared/liuhj/tonglv/Infos/20210311-info.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P5
+    jobid: 2
+    wildcards: person=P5
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P5 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P5   
+[Fri Mar 12 10:52:03 2021]
+Finished job 2.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:52:03 2021]
+localrule all:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P5
+    jobid: 0
+
+[Fri Mar 12 10:52:03 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-03-12T105154.527379.snakemake.log

@@ -1,0 +1,69 @@
+all SNP posi: 125709
+NA count : 5999
+all SNP posi(no NA): 119710
+all homo region posi : 1311129
+all repeat posi :297273
+filt SNPs in homo :18771
+filt SNPs not in homo but in repeat :2370
+final SNPs posis num  :92570
+
+samp P1-S10 final SNPs num :21574
+samp P1-S11 final SNPs num :21586
+samp P1-S12 final SNPs num :21473
+samp P1-S13 final SNPs num :21588
+samp P1-S14 final SNPs num :21590
+samp P1-S15 final SNPs num :21588
+samp P1-S1 final SNPs num :21509
+samp P1-S2 final SNPs num :21566
+samp P1-S3 final SNPs num :21574
+samp P1-S4 final SNPs num :21575
+samp P1-S5 final SNPs num :21574
+samp P1-S6 final SNPs num :21570
+samp P1-S7 final SNPs num :21569
+samp P1-S8 final SNPs num :21574
+samp P1-S9 final SNPs num :21573
+samp P3-S1 final SNPs num :20790
+samp P3-S2 final SNPs num :20822
+samp P3-S3 final SNPs num :20813
+samp P3-S4 final SNPs num :20812
+samp P3-S5 final SNPs num :20828
+samp P3-S6 final SNPs num :43789
+samp P3-S8 final SNPs num :43791
+samp P3-S9 final SNPs num :43790
+samp P3-S10 final SNPs num :43788
+samp P3-S11 final SNPs num :43797
+samp P3-S12 final SNPs num :43792
+samp P3-S13 final SNPs num :43794
+samp P3-S14 final SNPs num :43793
+samp P3-S15 final SNPs num :43792
+samp P3-S16 final SNPs num :43791
+samp P3-S7 final SNPs num :43584
+samp P4-S1 final SNPs num :25034
+samp P4-S2 final SNPs num :25034
+samp P4-S3 final SNPs num :25103
+samp P4-S4 final SNPs num :25036
+samp P4-S5 final SNPs num :24782
+samp P4-S6 final SNPs num :25069
+samp P4-S7 final SNPs num :25088
+samp P4-S8 final SNPs num :25097
+samp P4-S9 final SNPs num :25076
+samp P4-S10 final SNPs num :25115
+samp P5-S1 final SNPs num :21213
+samp P5-S2 final SNPs num :21212
+samp P5-S3 final SNPs num :21221
+samp P5-S4 final SNPs num :21221
+samp P5-S5 final SNPs num :21227
+samp P5-S6 final SNPs num :21227
+samp P5-S7 final SNPs num :21226
+samp P6-S1 final SNPs num :20987
+samp P6-S2 final SNPs num :20987
+samp P6-S3 final SNPs num :20989
+samp P6-S4 final SNPs num :20989
+samp P6-S5 final SNPs num :20989
+samp P6-S6 final SNPs num :20987
+samp P7-S1 final SNPs num :21951
+samp P7-S2 final SNPs num :21953
+samp P7-S3 final SNPs num :21947
+samp P7-S4 final SNPs num :21952
+samp P7-S5 final SNPs num :21951
+samp P7-S6 final SNPs num :21956

@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	6	iSNV_SameDateSampsCompare
+	7
+Select jobs to execute...
+
+[Wed Mar 10 17:33:18 2021]
+rule iSNV_SameDateSampsCompare:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P7
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare_sameDateSamps/P7
+    jobid: 6
+    wildcards: person=P7
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P7 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare_sameDateSamps/P7   
+[Wed Mar 10 17:33:18 2021]
+Error in rule iSNV_SameDateSampsCompare:
+    jobid: 6
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare_sameDateSamps/P7
+    shell:
+        python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P7 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare_sameDateSamps/P7   
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job iSNV_SameDateSampsCompare since they might be corrupted:
+/shared/liuhj/tonglv/process/person_ntfreq_tables/compare_sameDateSamps/P7
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-03-10T173318.328598.snakemake.log

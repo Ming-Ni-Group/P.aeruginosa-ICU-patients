@@ -1,0 +1,30 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	iSNV_snvSNP_snpeff_Stat
+	13
+Select jobs to execute...
+
+[Fri Apr  2 23:44:08 2021]
+rule iSNV_snvSNP_snpeff_Stat:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3-1/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/Infos/20210311-info.txt, /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3-1/snvSNP_snpeff_Stat_OtherBacFilted
+    jobid: 70
+    wildcards: person=P3-1
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNV_snpeff_clade.py  -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3-1/all.iSNV_with_SNP.pyResults.txt  		-f /shared/liuhj/tonglv/Infos/20210311-info.txt  -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3-1/snvSNP_snpeff_Stat_OtherBacFilted -m 0.1  -M 0.9  -E /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt 
+[Fri Apr  2 23:44:08 2021]
+Error in rule iSNV_snvSNP_snpeff_Stat:
+    jobid: 70
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3-1/snvSNP_snpeff_Stat_OtherBacFilted
+    shell:
+        python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNV_snpeff_clade.py  -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3-1/all.iSNV_with_SNP.pyResults.txt  		-f /shared/liuhj/tonglv/Infos/20210311-info.txt  -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P3-1/snvSNP_snpeff_Stat_OtherBacFilted -m 0.1  -M 0.9  -E /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt 
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-04-02T234408.850059.snakemake.log

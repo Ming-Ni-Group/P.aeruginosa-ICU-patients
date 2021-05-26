@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	4	iSNV_freq_distribut
+	5
+Select jobs to execute...
+
+[Thu Mar 11 11:02:52 2021]
+rule iSNV_freq_distribut:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/all.iSNV_with_SNP.pyResults.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/snvFreq_distribut_Stat
+    jobid: 15
+    wildcards: person=P6
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_Freq_distribut_Stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/all.iSNV_with_SNP.pyResults.txt -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P6/snvFreq_distribut_Stat -m 0.05  -M 1.0  -s 2  
+Terminating processes on user request, this might take some time.
+[Thu Mar 11 11:02:56 2021]
+Finished job 15.
+1 of 5 steps (20%) done
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-03-11T110252.747299.snakemake.log

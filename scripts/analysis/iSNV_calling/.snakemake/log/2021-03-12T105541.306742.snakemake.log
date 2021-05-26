@@ -1,0 +1,96 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	7	iSNV_SameDateSampsCompare_consensus
+	8
+Select jobs to execute...
+
+[Fri Mar 12 10:55:41 2021]
+rule iSNV_SameDateSampsCompare_consensus:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P1, /shared/liuhj/tonglv/Infos/20210311-info.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P1
+    jobid: 8
+    wildcards: person=P1
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P1 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P1   
+[Fri Mar 12 10:55:52 2021]
+Finished job 8.
+1 of 8 steps (12%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:55:52 2021]
+rule iSNV_SameDateSampsCompare_consensus:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P7, /shared/liuhj/tonglv/Infos/20210311-info.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P7
+    jobid: 14
+    wildcards: person=P7
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P7 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P7   
+[Fri Mar 12 10:55:54 2021]
+Finished job 14.
+2 of 8 steps (25%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:55:54 2021]
+rule iSNV_SameDateSampsCompare_consensus:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P4, /shared/liuhj/tonglv/Infos/20210311-info.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P4
+    jobid: 11
+    wildcards: person=P4
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P4 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P4   
+[Fri Mar 12 10:55:57 2021]
+Finished job 11.
+3 of 8 steps (38%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:55:57 2021]
+rule iSNV_SameDateSampsCompare_consensus:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P2, /shared/liuhj/tonglv/Infos/20210311-info.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P2
+    jobid: 9
+    wildcards: person=P2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P2 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P2   
+[Fri Mar 12 10:55:57 2021]
+Finished job 9.
+4 of 8 steps (50%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:55:57 2021]
+rule iSNV_SameDateSampsCompare_consensus:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P6, /shared/liuhj/tonglv/Infos/20210311-info.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P6
+    jobid: 13
+    wildcards: person=P6
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P6 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P6   
+[Fri Mar 12 10:55:58 2021]
+Finished job 13.
+5 of 8 steps (62%) done
+Select jobs to execute...
+
+[Fri Mar 12 10:55:58 2021]
+rule iSNV_SameDateSampsCompare_consensus:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P3, /shared/liuhj/tonglv/Infos/20210311-info.txt
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P3
+    jobid: 10
+    wildcards: person=P3
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P3 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P3   
+Terminating processes on user request, this might take some time.
+[Fri Mar 12 10:56:05 2021]
+Error in rule iSNV_SameDateSampsCompare_consensus:
+    jobid: 10
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P3
+    shell:
+        python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNVpy_Freq_sameDateSamp_consensus.py  -f  /shared/liuhj/tonglv/Infos/20210311-info.txt -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P3 -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P3   
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job iSNV_SameDateSampsCompare_consensus since they might be corrupted:
+/shared/liuhj/tonglv/process/person_ntfreq_tables/compare/P3
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-03-12T105541.306742.snakemake.log

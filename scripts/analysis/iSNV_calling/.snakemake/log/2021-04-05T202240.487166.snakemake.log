@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	iSNV_snvSNP_snpeff_Stat
+	2
+Select jobs to execute...
+
+[Mon Apr  5 20:22:40 2021]
+rule iSNV_snvSNP_snpeff_Stat:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/Infos/20210311-info.txt, /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf_snpeff, /shared/liuhj/tonglv/process/RefGnmRepeatRegion/repeatmasker_out/AE004091.2.fasta.masked.fasta, /shared/liuhj/tonglv/process/20210405-PAsimulateReads-mapToAE0049/PA.RepeatRegion-Cov30-identy60.Posi.txt
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/snvSNP_snpeff_Stat_OtherBacFilted-FiltSimutPARepeat
+    jobid: 6
+    wildcards: person=P1
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNV_snpeff_clade.py  -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt  		-f /shared/liuhj/tonglv/Infos/20210311-info.txt -e /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf_snpeff -R /shared/liuhj/tonglv/process/20210405-PAsimulateReads-mapToAE0049/PA.RepeatRegion-Cov30-identy60.Posi.txt -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/snvSNP_snpeff_Stat_OtherBacFilted-FiltSimutPARepeat -m 0.1  -M 0.9  -E /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt 
+[Mon Apr  5 20:22:44 2021]
+Finished job 6.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Mon Apr  5 20:22:44 2021]
+localrule all:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/vcf_snpeff, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/general-snvFreq_distribut_Stat, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/snvNum_Stat_noSNV_OtherBacfilted-FiltSimutPARepeat, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P1/snvSNP_snpeff_Stat_OtherBacFilted-FiltSimutPARepeat
+    jobid: 0
+
+[Mon Apr  5 20:22:44 2021]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-04-05T202240.487166.snakemake.log

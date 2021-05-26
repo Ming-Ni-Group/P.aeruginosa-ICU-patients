@@ -1,0 +1,2 @@
+Samp	validPosNo	IsSampleValid	meanSiteDep	no.SNV	np.SNP
+P3-S7.sort.rmdup.mpileup	5947495	yes	196.04333237615958	1507	55331

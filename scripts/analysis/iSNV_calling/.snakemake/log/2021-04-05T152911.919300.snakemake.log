@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	iSNV_snvNumCount_noSNV
+	13
+Select jobs to execute...
+
+[Mon Apr  5 15:29:11 2021]
+rule iSNV_snvNumCount_noSNV:
+    input: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/Infos/20210311-info.txt, /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt, /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/vcf_snpeff, /shared/liuhj/tonglv/process/RefGnmRepeatRegion/repeatmasker_out/AE004091.2.fasta.masked.fasta, /shared/liuhj/tonglv/process/20210405-PAsimulateReads-mapToAE0049/PA.RepeatRegion-identy80.Posi.txt
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/snvNum_Stat_noSNV_OtherBacfilted-FiltSimutPARepeat
+    jobid: 56
+    wildcards: person=P5-2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_snvSNP_Stat_clade.py   -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/all.iSNV_with_SNP.pyResults.txt  		-f /shared/liuhj/tonglv/Infos/20210311-info.txt -e /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/vcf_snpeff -R /shared/liuhj/tonglv/process/20210405-PAsimulateReads-mapToAE0049/PA.RepeatRegion-identy80.Posi.txt -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/snvNum_Stat_noSNV_OtherBacfilted-FiltSimutPARepeat  -m 0.1  -M 0.9  -E /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt   
+[Mon Apr  5 15:29:13 2021]
+Error in rule iSNV_snvNumCount_noSNV:
+    jobid: 56
+    output: /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/snvNum_Stat_noSNV_OtherBacfilted-FiltSimutPARepeat
+    shell:
+        python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_snvSNP_Stat_clade.py   -i /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/all.iSNV_with_SNP.pyResults.txt  		-f /shared/liuhj/tonglv/Infos/20210311-info.txt -e /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/vcf_snpeff -R /shared/liuhj/tonglv/process/20210405-PAsimulateReads-mapToAE0049/PA.RepeatRegion-identy80.Posi.txt -o  /shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/snvNum_Stat_noSNV_OtherBacfilted-FiltSimutPARepeat  -m 0.1  -M 0.9  -E /shared/liuhj/tonglv/process/20210402-bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt   
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job iSNV_snvNumCount_noSNV since they might be corrupted:
+/shared/liuhj/tonglv/process/20210401-person_ntfreq_tables/P5-2/snvNum_Stat_noSNV_OtherBacfilted-FiltSimutPARepeat
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-04-05T152911.919300.snakemake.log

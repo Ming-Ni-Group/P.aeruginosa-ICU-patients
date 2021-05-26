@@ -1,0 +1,1323 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 30
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	27	mpileup
+	70	varscan2_mpileup2Indel
+	98
+Select jobs to execute...
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P6-S3.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S3.mpileup2Indel.vcf
+    jobid: 124
+    wildcards: samp=P6-S3
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P6-S3.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P6-S3.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S13.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S13.mpileup2Indel.vcf
+    jobid: 40
+    wildcards: samp=P3-S13
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S13.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S13.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S9.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S9.mpileup2Indel.vcf
+    jobid: 118
+    wildcards: samp=P5-S9
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S9.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S9.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S8.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S8.mpileup2Indel.vcf
+    jobid: 62
+    wildcards: samp=P3-S8
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S8.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S8.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S4.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S4.mpileup2Indel.vcf
+    jobid: 20
+    wildcards: samp=P1-S4
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S4.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S4.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S2.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S2.mpileup2Indel.vcf
+    jobid: 104
+    wildcards: samp=P5-S2
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S2.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S2.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S12.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S12.mpileup2Indel.vcf
+    jobid: 90
+    wildcards: samp=P5-S12
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S12.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S12.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S6.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S6.mpileup2Indel.vcf
+    jobid: 112
+    wildcards: samp=P5-S6
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S6.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S6.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S8.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S8.mpileup2Indel.vcf
+    jobid: 28
+    wildcards: samp=P1-S8
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S8.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S8.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S9.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S9.mpileup2Indel.vcf
+    jobid: 84
+    wildcards: samp=P4-S9
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S9.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S9.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S16.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S16.mpileup2Indel.vcf
+    jobid: 98
+    wildcards: samp=P5-S16
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S16.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S16.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P7-S5.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P7-S5.mpileup2Indel.vcf
+    jobid: 140
+    wildcards: samp=P7-S5
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P7-S5.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P7-S5.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S1.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S1.mpileup2Indel.vcf
+    jobid: 14
+    wildcards: samp=P1-S1
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S1.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S1.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S5.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S5.mpileup2Indel.vcf
+    jobid: 56
+    wildcards: samp=P3-S5
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S5.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S5.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P6-S4.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S4.mpileup2Indel.vcf
+    jobid: 126
+    wildcards: samp=P6-S4
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P6-S4.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P6-S4.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S9.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S9.mpileup2Indel.vcf
+    jobid: 64
+    wildcards: samp=P3-S9
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S9.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S9.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S13.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S13.mpileup2Indel.vcf
+    jobid: 92
+    wildcards: samp=P5-S13
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S13.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S13.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S3.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S3.mpileup2Indel.vcf
+    jobid: 106
+    wildcards: samp=P5-S3
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S3.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S3.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S13.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S13.mpileup2Indel.vcf
+    jobid: 8
+    wildcards: samp=P1-S13
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S13.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S13.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S5.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S5.mpileup2Indel.vcf
+    jobid: 22
+    wildcards: samp=P1-S5
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S5.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S5.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S11.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S11.mpileup2Indel.vcf
+    jobid: 36
+    wildcards: samp=P3-S11
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S11.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S11.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S2.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S2.mpileup2Indel.vcf
+    jobid: 50
+    wildcards: samp=P3-S2
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S2.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S2.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P6-S1.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S1.mpileup2Indel.vcf
+    jobid: 120
+    wildcards: samp=P6-S1
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P6-S1.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P6-S1.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S10.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S10.mpileup2Indel.vcf
+    jobid: 86
+    wildcards: samp=P5-S10
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S10.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S10.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S10.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S10.mpileup2Indel.vcf
+    jobid: 2
+    wildcards: samp=P1-S10
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S10.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S10.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S15.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S15.mpileup2Indel.vcf
+    jobid: 44
+    wildcards: samp=P3-S15
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S15.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S15.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S14.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S14.mpileup2Indel.vcf
+    jobid: 94
+    wildcards: samp=P5-S14
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S14.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S14.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S2.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S2.mpileup2Indel.vcf
+    jobid: 70
+    wildcards: samp=P4-S2
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S2.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S2.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S12.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S12.mpileup2Indel.vcf
+    jobid: 38
+    wildcards: samp=P3-S12
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S12.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S12.mpileup2Indel.vcf 
+
+[Tue Apr 13 13:26:35 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S14.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S14.mpileup2Indel.vcf
+    jobid: 42
+    wildcards: samp=P3-S14
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S14.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S14.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S5.mpileup.
+[Tue Apr 13 13:47:41 2021]
+Finished job 22.
+1 of 98 steps (1%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:47:41 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S3.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S3.mpileup2Indel.vcf
+    jobid: 18
+    wildcards: samp=P1-S3
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S3.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S3.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S9.mpileup.
+[Tue Apr 13 13:48:40 2021]
+Finished job 64.
+2 of 98 steps (2%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:48:40 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P7-S6.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P7-S6.mpileup2Indel.vcf
+    jobid: 142
+    wildcards: samp=P7-S6
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P7-S6.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P7-S6.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S2.mpileup.
+[Tue Apr 13 13:48:49 2021]
+Finished job 70.
+3 of 98 steps (3%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:48:49 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P6-S6.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S6.mpileup2Indel.vcf
+    jobid: 130
+    wildcards: samp=P6-S6
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P6-S6.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P6-S6.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S14.mpileup.
+[Tue Apr 13 13:48:52 2021]
+Finished job 94.
+4 of 98 steps (4%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:48:52 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P2-S1.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P2-S1.mpileup2Indel.vcf
+    jobid: 32
+    wildcards: samp=P2-S1
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P2-S1.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P2-S1.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S2.mpileup.
+[Tue Apr 13 13:49:09 2021]
+Finished job 50.
+5 of 98 steps (5%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:49:09 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S6.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S6.mpileup2Indel.vcf
+    jobid: 78
+    wildcards: samp=P4-S6
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S6.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S6.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S9.mpileup.
+[Tue Apr 13 13:49:48 2021]
+Finished job 84.
+6 of 98 steps (6%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:49:48 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S10.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S10.mpileup2Indel.vcf
+    jobid: 34
+    wildcards: samp=P3-S10
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S10.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S10.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S13.mpileup.
+[Tue Apr 13 13:50:03 2021]
+Finished job 92.
+7 of 98 steps (7%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:03 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S9.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S9.mpileup2Indel.vcf
+    jobid: 30
+    wildcards: samp=P1-S9
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S9.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S9.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P7-S5.mpileup.
+[Tue Apr 13 13:50:04 2021]
+Finished job 140.
+8 of 98 steps (8%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:04 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S5.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S5.mpileup2Indel.vcf
+    jobid: 76
+    wildcards: samp=P4-S5
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S5.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S5.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S12.mpileup.
+[Tue Apr 13 13:50:18 2021]
+Finished job 38.
+9 of 98 steps (9%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:18 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S1.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S1.mpileup2Indel.vcf
+    jobid: 48
+    wildcards: samp=P3-S1
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S1.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S1.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S8.mpileup.
+[Tue Apr 13 13:50:25 2021]
+Finished job 28.
+10 of 98 steps (10%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:25 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S12.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S12.mpileup2Indel.vcf
+    jobid: 6
+    wildcards: samp=P1-S12
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S12.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S12.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S10.mpileup.
+[Tue Apr 13 13:50:32 2021]
+Finished job 2.
+11 of 98 steps (11%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:32 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S2.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S2.mpileup2Indel.vcf
+    jobid: 16
+    wildcards: samp=P1-S2
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S2.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S2.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S6.mpileup.
+[Tue Apr 13 13:50:34 2021]
+Finished job 112.
+12 of 98 steps (12%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:34 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P7-S1.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P7-S1.mpileup2Indel.vcf
+    jobid: 132
+    wildcards: samp=P7-S1
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P7-S1.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P7-S1.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P6-S4.mpileup.
+[Tue Apr 13 13:50:45 2021]
+Finished job 126.
+13 of 98 steps (13%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:45 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S4.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S4.mpileup2Indel.vcf
+    jobid: 54
+    wildcards: samp=P3-S4
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S4.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S4.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S5.mpileup.
+[Tue Apr 13 13:50:56 2021]
+Finished job 56.
+14 of 98 steps (14%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:50:56 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P4-S7.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P4-S7.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup
+    jobid: 81
+    wildcards: samp=P4-S7
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P4-S7.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S1.mpileup.
+[Tue Apr 13 13:51:02 2021]
+Finished job 14.
+15 of 98 steps (15%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:51:02 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P3-S3.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P3-S3.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup
+    jobid: 53
+    wildcards: samp=P3-S3
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P3-S3.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S12.mpileup.
+[Tue Apr 13 13:51:05 2021]
+Finished job 90.
+16 of 98 steps (16%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:51:05 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P1-S14.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P1-S14.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup
+    jobid: 11
+    wildcards: samp=P1-S14
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P1-S14.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S9.mpileup.
+[Tue Apr 13 13:51:14 2021]
+Finished job 118.
+17 of 98 steps (17%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:51:14 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P1-S6.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P1-S6.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup
+    jobid: 25
+    wildcards: samp=P1-S6
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P1-S6.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S13.mpileup.
+[Tue Apr 13 13:51:21 2021]
+Finished job 40.
+18 of 98 steps (18%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:51:21 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P7-S3.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P7-S3.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup
+    jobid: 137
+    wildcards: samp=P7-S3
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P7-S3.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S10.mpileup.
+[Tue Apr 13 13:51:37 2021]
+Finished job 86.
+19 of 98 steps (19%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:51:37 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P6-S2.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P6-S2.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup
+    jobid: 123
+    wildcards: samp=P6-S2
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P6-S2.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S11.mpileup.
+[Tue Apr 13 13:51:46 2021]
+Finished job 36.
+20 of 98 steps (20%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:51:46 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P4-S10.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P4-S10.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup
+    jobid: 67
+    wildcards: samp=P4-S10
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P4-S10.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S14.mpileup.
+[Tue Apr 13 13:51:53 2021]
+Finished job 42.
+21 of 98 steps (21%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:51:53 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P3-S7.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P3-S7.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup
+    jobid: 61
+    wildcards: samp=P3-S7
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P3-S7.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S3.mpileup.
+[Tue Apr 13 13:52:04 2021]
+Finished job 106.
+22 of 98 steps (22%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:52:04 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S11.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S11.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup
+    jobid: 89
+    wildcards: samp=P5-S11
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S11.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P6-S3.mpileup.
+[Tue Apr 13 13:52:59 2021]
+Finished job 124.
+23 of 98 steps (23%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:52:59 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P1-S15.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P1-S15.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup
+    jobid: 13
+    wildcards: samp=P1-S15
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P1-S15.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S15.mpileup.
+[Tue Apr 13 13:53:07 2021]
+Finished job 44.
+24 of 98 steps (24%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:53:07 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P4-S1.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P4-S1.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup
+    jobid: 69
+    wildcards: samp=P4-S1
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P4-S1.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S8.mpileup.
+[Tue Apr 13 13:53:48 2021]
+Finished job 62.
+25 of 98 steps (26%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:53:48 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P1-S7.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P1-S7.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup
+    jobid: 27
+    wildcards: samp=P1-S7
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P1-S7.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S4.mpileup.
+[Tue Apr 13 13:54:10 2021]
+Finished job 20.
+26 of 98 steps (27%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:54:10 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S7.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S7.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup
+    jobid: 115
+    wildcards: samp=P5-S7
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S7.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S16.mpileup.
+[Tue Apr 13 13:54:29 2021]
+Finished job 98.
+27 of 98 steps (28%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:54:29 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S1.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S1.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup
+    jobid: 103
+    wildcards: samp=P5-S1
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S1.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S13.mpileup.
+[Tue Apr 13 13:54:59 2021]
+Finished job 8.
+28 of 98 steps (29%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:54:59 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P1-S11.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P1-S11.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup
+    jobid: 5
+    wildcards: samp=P1-S11
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P1-S11.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P6-S1.mpileup.
+[Tue Apr 13 13:56:07 2021]
+Finished job 120.
+29 of 98 steps (30%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:56:07 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P3-S16.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P3-S16.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup
+    jobid: 47
+    wildcards: samp=P3-S16
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P3-S16.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S2.mpileup.
+[Tue Apr 13 13:59:16 2021]
+Finished job 104.
+30 of 98 steps (31%) done
+Select jobs to execute...
+
+[Tue Apr 13 13:59:16 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P4-S4.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P4-S4.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup
+    jobid: 75
+    wildcards: samp=P4-S4
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P4-S4.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup 
+[Tue Apr 13 14:02:51 2021]
+Finished job 137.
+31 of 98 steps (32%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:02:51 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup2Indel.vcf
+    jobid: 136
+    wildcards: samp=P7-S3
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup2Indel.vcf 
+[Tue Apr 13 14:03:56 2021]
+Finished job 25.
+32 of 98 steps (33%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:03:56 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup2Indel.vcf
+    jobid: 24
+    wildcards: samp=P1-S6
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup.
+[Tue Apr 13 14:04:13 2021]
+Finished job 136.
+33 of 98 steps (34%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:04:13 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S8.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S8.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup
+    jobid: 117
+    wildcards: samp=P5-S8
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S8.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup 
+[Tue Apr 13 14:04:42 2021]
+Finished job 123.
+34 of 98 steps (35%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:04:42 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup2Indel.vcf
+    jobid: 122
+    wildcards: samp=P6-S2
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup2Indel.vcf 
+[Tue Apr 13 14:04:49 2021]
+Finished job 11.
+35 of 98 steps (36%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:04:49 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup2Indel.vcf
+    jobid: 10
+    wildcards: samp=P1-S14
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup2Indel.vcf 
+[Tue Apr 13 14:05:04 2021]
+Finished job 67.
+36 of 98 steps (37%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:05:04 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup2Indel.vcf
+    jobid: 66
+    wildcards: samp=P4-S10
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup.
+[Tue Apr 13 14:05:39 2021]
+Finished job 24.
+37 of 98 steps (38%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:05:39 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P4-S3.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P4-S3.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup
+    jobid: 73
+    wildcards: samp=P4-S3
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P4-S3.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup 
+[Tue Apr 13 14:06:01 2021]
+Finished job 53.
+38 of 98 steps (39%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:06:01 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup2Indel.vcf
+    jobid: 52
+    wildcards: samp=P3-S3
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup.
+[Tue Apr 13 14:06:26 2021]
+Finished job 122.
+39 of 98 steps (40%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:06:26 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P6-S5.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P6-S5.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup
+    jobid: 129
+    wildcards: samp=P6-S5
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P6-S5.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup 
+[Tue Apr 13 14:06:32 2021]
+Finished job 69.
+40 of 98 steps (41%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:06:32 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup2Indel.vcf
+    jobid: 68
+    wildcards: samp=P4-S1
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup.
+[Tue Apr 13 14:06:36 2021]
+Finished job 10.
+41 of 98 steps (42%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:06:36 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S17.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S17.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup
+    jobid: 101
+    wildcards: samp=P5-S17
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S17.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup.
+[Tue Apr 13 14:06:37 2021]
+Finished job 66.
+42 of 98 steps (43%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:06:37 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P3-S6.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P3-S6.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup
+    jobid: 59
+    wildcards: samp=P3-S6
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P3-S6.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup 
+[Tue Apr 13 14:06:52 2021]
+Finished job 89.
+43 of 98 steps (44%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:06:52 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup2Indel.vcf
+    jobid: 88
+    wildcards: samp=P5-S11
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup2Indel.vcf 
+[Tue Apr 13 14:06:55 2021]
+Finished job 81.
+44 of 98 steps (45%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:06:55 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup2Indel.vcf
+    jobid: 80
+    wildcards: samp=P4-S7
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup2Indel.vcf 
+[Tue Apr 13 14:07:30 2021]
+Finished job 61.
+45 of 98 steps (46%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:07:30 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup2Indel.vcf
+    jobid: 60
+    wildcards: samp=P3-S7
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup.
+[Tue Apr 13 14:08:16 2021]
+Finished job 68.
+46 of 98 steps (47%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:08:16 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P4-S8.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P4-S8.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup
+    jobid: 83
+    wildcards: samp=P4-S8
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P4-S8.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup 
+[Tue Apr 13 14:08:20 2021]
+Finished job 5.
+47 of 98 steps (48%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:08:20 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup2Indel.vcf
+    jobid: 4
+    wildcards: samp=P1-S11
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup.
+[Tue Apr 13 14:08:48 2021]
+Finished job 88.
+48 of 98 steps (49%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:08:48 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S15.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S15.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup
+    jobid: 97
+    wildcards: samp=P5-S15
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S15.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup.
+[Tue Apr 13 14:09:33 2021]
+Finished job 60.
+49 of 98 steps (50%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:09:33 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S5.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S5.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup
+    jobid: 111
+    wildcards: samp=P5-S5
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S5.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup.
+[Tue Apr 13 14:09:46 2021]
+Finished job 4.
+50 of 98 steps (51%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:09:46 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P5-S4.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P5-S4.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup
+    jobid: 109
+    wildcards: samp=P5-S4
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P5-S4.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup 
+[Tue Apr 13 14:10:02 2021]
+Finished job 13.
+51 of 98 steps (52%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:10:02 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup2Indel.vcf
+    jobid: 12
+    wildcards: samp=P1-S15
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup2Indel.vcf 
+[Tue Apr 13 14:10:49 2021]
+Finished job 115.
+52 of 98 steps (53%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:10:49 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup2Indel.vcf
+    jobid: 114
+    wildcards: samp=P5-S7
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P7-S1.mpileup.
+[Tue Apr 13 14:12:11 2021]
+Finished job 132.
+53 of 98 steps (54%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:12:11 2021]
+rule mpileup:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna, /shared/liuhj/tonglv/process/bam/P7-S4.sort.rmdup.bam, /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.fai, /shared/liuhj/tonglv/process/bam/P7-S4.sort.rmdup.bam.bai
+    output: /shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup
+    jobid: 139
+    wildcards: samp=P7-S4
+
+samtools mpileup -A  -d 10000  -B -Q 0 --reference  /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna  /shared/liuhj/tonglv/process/bam/P7-S4.sort.rmdup.bam  1>/shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup.
+[Tue Apr 13 14:12:14 2021]
+Finished job 12.
+54 of 98 steps (55%) done
+[Tue Apr 13 14:12:34 2021]
+Finished job 27.
+55 of 98 steps (56%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:12:34 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup2Indel.vcf
+    jobid: 26
+    wildcards: samp=P1-S7
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup.
+[Tue Apr 13 14:12:51 2021]
+Finished job 114.
+56 of 98 steps (57%) done
+[Tue Apr 13 14:12:57 2021]
+Finished job 103.
+57 of 98 steps (58%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:12:57 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup2Indel.vcf
+    jobid: 102
+    wildcards: samp=P5-S1
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S3.mpileup.
+[Tue Apr 13 14:13:19 2021]
+Finished job 18.
+58 of 98 steps (59%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S12.mpileup.
+[Tue Apr 13 14:13:29 2021]
+Finished job 6.
+59 of 98 steps (60%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S1.mpileup.
+[Tue Apr 13 14:13:56 2021]
+Finished job 48.
+60 of 98 steps (61%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P7-S6.mpileup.
+[Tue Apr 13 14:13:57 2021]
+Finished job 142.
+61 of 98 steps (62%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S4.mpileup.
+[Tue Apr 13 14:14:09 2021]
+Finished job 54.
+62 of 98 steps (63%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P6-S6.mpileup.
+[Tue Apr 13 14:14:12 2021]
+Finished job 130.
+63 of 98 steps (64%) done
+[Tue Apr 13 14:14:49 2021]
+Finished job 75.
+64 of 98 steps (65%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:14:49 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup2Indel.vcf
+    jobid: 74
+    wildcards: samp=P4-S4
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P2-S1.mpileup.
+[Tue Apr 13 14:14:51 2021]
+Finished job 32.
+65 of 98 steps (66%) done
+[Tue Apr 13 14:14:55 2021]
+Finished job 47.
+66 of 98 steps (67%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:14:55 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup2Indel.vcf
+    jobid: 46
+    wildcards: samp=P3-S16
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup.
+[Tue Apr 13 14:15:02 2021]
+Finished job 102.
+67 of 98 steps (68%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S5.mpileup.
+[Tue Apr 13 14:15:08 2021]
+Finished job 76.
+68 of 98 steps (69%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S6.mpileup.
+[Tue Apr 13 14:15:32 2021]
+Finished job 78.
+69 of 98 steps (70%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S9.mpileup.
+[Tue Apr 13 14:16:27 2021]
+Finished job 30.
+70 of 98 steps (71%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S10.mpileup.
+[Tue Apr 13 14:16:39 2021]
+Finished job 34.
+71 of 98 steps (72%) done
+[Tue Apr 13 14:16:45 2021]
+Finished job 73.
+72 of 98 steps (73%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:16:45 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup2Indel.vcf
+    jobid: 72
+    wildcards: samp=P4-S3
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S2.mpileup.
+[Tue Apr 13 14:16:50 2021]
+Finished job 16.
+73 of 98 steps (74%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup.
+[Tue Apr 13 14:16:52 2021]
+Finished job 74.
+74 of 98 steps (76%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup.
+[Tue Apr 13 14:16:54 2021]
+Finished job 46.
+75 of 98 steps (77%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup.
+[Tue Apr 13 14:17:03 2021]
+Finished job 26.
+76 of 98 steps (78%) done
+[Tue Apr 13 14:17:19 2021]
+Finished job 129.
+77 of 98 steps (79%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:17:19 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup2Indel.vcf
+    jobid: 128
+    wildcards: samp=P6-S5
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup2Indel.vcf 
+[Tue Apr 13 14:17:23 2021]
+Finished job 59.
+78 of 98 steps (80%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:17:23 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup2Indel.vcf
+    jobid: 58
+    wildcards: samp=P3-S6
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup2Indel.vcf 
+[Tue Apr 13 14:17:27 2021]
+Finished job 117.
+79 of 98 steps (81%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:17:27 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup2Indel.vcf
+    jobid: 116
+    wildcards: samp=P5-S8
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup2Indel.vcf 
+[Tue Apr 13 14:17:38 2021]
+Finished job 101.
+80 of 98 steps (82%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:17:38 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup2Indel.vcf
+    jobid: 100
+    wildcards: samp=P5-S17
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup2Indel.vcf 
+[Tue Apr 13 14:17:52 2021]
+Finished job 83.
+81 of 98 steps (83%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:17:52 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup2Indel.vcf
+    jobid: 82
+    wildcards: samp=P4-S8
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup2Indel.vcf 
+[Tue Apr 13 14:17:58 2021]
+Finished job 97.
+82 of 98 steps (84%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:17:58 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup2Indel.vcf
+    jobid: 96
+    wildcards: samp=P5-S15
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup2Indel.vcf 
+[Tue Apr 13 14:18:12 2021]
+Finished job 139.
+83 of 98 steps (85%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:18:12 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup2Indel.vcf
+    jobid: 138
+    wildcards: samp=P7-S4
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup2Indel.vcf 
+[Tue Apr 13 14:18:17 2021]
+Finished job 111.
+84 of 98 steps (86%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:18:17 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup2Indel.vcf
+    jobid: 110
+    wildcards: samp=P5-S5
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup.
+[Tue Apr 13 14:18:30 2021]
+Finished job 72.
+85 of 98 steps (87%) done
+[Tue Apr 13 14:18:50 2021]
+Finished job 109.
+86 of 98 steps (88%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:18:50 2021]
+rule varscan2_mpileup2Indel:
+    input: /shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup
+    output: /shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup2Indel.vcf
+    jobid: 108
+    wildcards: samp=P5-S4
+
+varscan   pileup2indel  /shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup  --min-coverage 50  --min-reads2  10    --min-var-freq  0.1   --variants  indel --output-vcf 1  >/shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup2Indel.vcf 
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup.
+[Tue Apr 13 14:19:14 2021]
+Finished job 58.
+87 of 98 steps (89%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup.
+[Tue Apr 13 14:19:27 2021]
+Finished job 100.
+88 of 98 steps (90%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup.
+[Tue Apr 13 14:19:30 2021]
+Finished job 128.
+89 of 98 steps (91%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup.
+[Tue Apr 13 14:19:33 2021]
+Finished job 52.
+90 of 98 steps (92%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup.
+[Tue Apr 13 14:19:38 2021]
+Finished job 96.
+91 of 98 steps (93%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup.
+[Tue Apr 13 14:19:54 2021]
+Finished job 116.
+92 of 98 steps (94%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup.
+[Tue Apr 13 14:19:59 2021]
+Finished job 82.
+93 of 98 steps (95%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup.
+[Tue Apr 13 14:20:00 2021]
+Finished job 80.
+94 of 98 steps (96%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup.
+[Tue Apr 13 14:20:06 2021]
+Finished job 138.
+95 of 98 steps (97%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup.
+[Tue Apr 13 14:20:30 2021]
+Finished job 110.
+96 of 98 steps (98%) done
+Removing temporary output file /shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup.
+[Tue Apr 13 14:21:25 2021]
+Finished job 108.
+97 of 98 steps (99%) done
+Select jobs to execute...
+
+[Tue Apr 13 14:21:25 2021]
+localrule all:
+    input: /shared/liuhj/tonglv/ref/ref_tonglv_AE004091.2/AE004091.2.fna.bwt, /shared/liuhj/tonglv/process/bam/P1-S10.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S11.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S12.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S13.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S14.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S15.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S1.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S2.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S3.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S4.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S5.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S6.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S7.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S8.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S9.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P2-S1.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S10.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S11.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S12.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S13.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S14.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S15.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S16.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S1.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S2.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S3.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S4.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S5.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S6.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S7.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S8.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P3-S9.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S10.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S1.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S2.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S3.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S4.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S5.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S6.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S7.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S8.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P4-S9.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S10.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S11.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S12.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S13.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S14.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S15.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S16.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S17.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S1.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S2.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S3.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S4.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S5.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S6.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S7.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S8.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P5-S9.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P6-S1.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P6-S2.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P6-S3.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P6-S4.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P6-S5.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P6-S6.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P7-S1.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P7-S2.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P7-S3.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P7-S4.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P7-S5.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P7-S6.sort.rmdup.bam, /shared/liuhj/tonglv/process/bam/P1-S10.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S11.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S12.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S13.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S14.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S15.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S1.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S2.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S3.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S4.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S5.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S6.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S7.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S8.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P1-S9.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P2-S1.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S10.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S11.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S12.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S13.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S14.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S15.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S16.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S1.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S2.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S3.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S4.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S5.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S6.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S7.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S8.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P3-S9.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S10.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S1.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S2.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S3.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S4.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S5.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S6.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S7.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S8.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P4-S9.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S10.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S11.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S12.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S13.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S14.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S15.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S16.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S17.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S1.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S2.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S3.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S4.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S5.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S6.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S7.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S8.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P5-S9.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P6-S1.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P6-S2.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P6-S3.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P6-S4.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P6-S5.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P6-S6.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P7-S1.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P7-S2.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P7-S3.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P7-S4.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P7-S5.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/bam/P7-S6.sort.rmdup.bam.bai, /shared/liuhj/tonglv/process/mpileup/P1-S10.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S11.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S12.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S13.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S14.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S15.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S1.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S2.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S3.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S4.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S5.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S6.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S7.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S8.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P1-S9.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P2-S1.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S10.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S11.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S12.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S13.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S14.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S15.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S16.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S1.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S2.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S3.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S4.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S5.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S6.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S7.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S8.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P3-S9.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S10.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S1.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S2.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S3.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S4.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S5.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S6.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S7.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S8.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P4-S9.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S10.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S11.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S12.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S13.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S14.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S15.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S16.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S17.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S1.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S2.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S3.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S4.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S5.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S6.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S7.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S8.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P5-S9.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P6-S1.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P6-S2.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P6-S3.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P6-S4.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P6-S5.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P6-S6.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P7-S1.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P7-S2.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P7-S3.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P7-S4.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P7-S5.mpileup2Indel.vcf, /shared/liuhj/tonglv/process/mpileup/P7-S6.mpileup2Indel.vcf
+    jobid: 0
+
+[Tue Apr 13 14:21:25 2021]
+Finished job 0.
+98 of 98 steps (100%) done
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/Pseudomonas-aeruginosa-ICU-patients/scripts/analysis/.snakemake/log/2021-04-13T132635.126653.snakemake.log

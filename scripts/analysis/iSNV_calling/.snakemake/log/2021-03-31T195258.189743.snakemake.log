@@ -1,0 +1,32 @@
+The flag 'directory' used in rule consensusGnm_prokkaAnno is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	7	iSNV_snvSNP_AnnoStat_FiledOtherPA_FiltedRepeatRegion
+	8
+Select jobs to execute...
+
+[Wed Mar 31 19:52:58 2021]
+rule iSNV_snvSNP_AnnoStat_FiledOtherPA_FiltedRepeatRegion:
+    input: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt, /shared/liuhj/tonglv/Infos/20210311-info.txt, /shared/liuhj/tonglv/process_bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt, /shared/liuhj/tonglv/process/RefGnmRepeatRegion/repeatmasker_out/AE004091.2.fasta.masked.fasta
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/20210331-snvSNP_AnnoStat_OtherBacFilted_RepeatFilted
+    jobid: 28
+    wildcards: person=P5_withP2
+
+python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNV_snpeff_clade_stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt  		-f /shared/liuhj/tonglv/Infos/20210311-info.txt  -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/20210331-snvSNP_AnnoStat_OtherBacFilted_RepeatFilted -m 0.1  -M 0.9  -E /shared/liuhj/tonglv/process_bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt -R /shared/liuhj/tonglv/process/RefGnmRepeatRegion/repeatmasker_out/AE004091.2.fasta.masked.fasta
+Terminating processes on user request, this might take some time.
+[Wed Mar 31 19:53:01 2021]
+Error in rule iSNV_snvSNP_AnnoStat_FiledOtherPA_FiltedRepeatRegion:
+    jobid: 28
+    output: /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/20210331-snvSNP_AnnoStat_OtherBacFilted_RepeatFilted
+    shell:
+        python  /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNVpy_iSNV_snpeff_clade_stat.py  -i /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/all.iSNV_with_SNP.pyResults.txt  		-f /shared/liuhj/tonglv/Infos/20210311-info.txt  -o  /shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/20210331-snvSNP_AnnoStat_OtherBacFilted_RepeatFilted -m 0.1  -M 0.9  -E /shared/liuhj/tonglv/process_bwaToOtherBacteria/PA-HomoRegions-FromOtherBacteria.txt -R /shared/liuhj/tonglv/process/RefGnmRepeatRegion/repeatmasker_out/AE004091.2.fasta.masked.fasta
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job iSNV_snvSNP_AnnoStat_FiledOtherPA_FiltedRepeatRegion since they might be corrupted:
+/shared/liuhj/tonglv/process/person_ntfreq_tables/P5_withP2/20210331-snvSNP_AnnoStat_OtherBacFilted_RepeatFilted
+Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-03-31T195258.189743.snakemake.log

@@ -1,0 +1,2 @@
+SyntaxError in line 102 of /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNV_calling-pipeline.py:
+Command must be given as string after the shell keyword. (iSNV_calling-pipeline.py, line 102)
