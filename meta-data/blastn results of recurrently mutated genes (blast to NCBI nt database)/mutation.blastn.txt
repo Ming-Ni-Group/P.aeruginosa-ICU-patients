@@ -1,0 +1,25 @@
+fptA	Pseudomonas aeruginosa strain DVT419 chromosome, complete genome	2093	C-T
+fptA	Pseudomonas aeruginosa strain T2101 chromosome, complete genome	2093	C-T
+
+
+
+
+
+
+
+
+
+oprD	Pseudomonas aeruginosa strain IRP41 OprD (oprD) gene, complete cds	831	G-A
+oprD	Pseudomonas aeruginosa strain FDAARGOS_570 chromosome, complete genome	1017	G-A
+
+
+
+
+
+
+
+
+
+
+
+
