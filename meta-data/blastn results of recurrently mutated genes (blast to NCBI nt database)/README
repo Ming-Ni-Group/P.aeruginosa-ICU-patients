@@ -1,5 +1,7 @@
 
-The files contained in this folder are the blast results of recurrently mutated genes in this study to the NCBI nt database.The purpose is to find the gene or genome sequences with the same mutation in the database
+The files contained in this folder are the blast results of recurrently mutated genes in this study to the NCBI nt database.The purpose is to find the gene or genome sequences in the database that with the same mutation 
+
+
 
 
 The mutation at the corresponding position in the comparison result can be judged by script (XXXX) whether it is the same as the mutation in this paper.
