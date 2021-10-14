@@ -11,8 +11,9 @@
 # -o output path of the file
 
 ## example 
-# python find-the-Mutations-from -blastn-results.py -g ../../meta_data/PAO1.sequence-genes.txt  -m  ../../meta_data/list of recurrent genes and mutations recurrently.txt
-# -o   $outpath  -b ../../meta_data
+# python find-the-Mutations-from -blastn-results.py -g ../../meta-data/blastn results of recurrently mutated genes (blast to NCBI nt database)/PAO1.sequence-genes.txt  
+# -m  ../../meta-data/blastn results of recurrently mutated genes (blast to NCBI nt database)/list of recurrent genes and mutations recurrently.txt
+# -o   $outpath  -b ../../meta-data/blastn results of recurrently mutated genes (blast to NCBI nt database)/
 
 
 #!/usr/bin/python
