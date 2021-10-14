@@ -11,7 +11,8 @@
 # -o output path of the file
 
 ## example 
-# 
+# python find-the-Mutations-from -blastn-results.py -g ../../meta_data/PAO1.sequence-genes.txt  -m  ../../meta_data/list of recurrent genes and mutations recurrently.txt
+# -o   $outpath  -b ../../meta_data
 
 	parser.add_option("-g","--GeneF",
 					  dest = "GeneF",
