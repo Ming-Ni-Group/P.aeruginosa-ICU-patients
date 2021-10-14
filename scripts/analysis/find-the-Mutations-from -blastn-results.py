@@ -14,31 +14,6 @@
 # python find-the-Mutations-from -blastn-results.py -g ../../meta_data/PAO1.sequence-genes.txt  -m  ../../meta_data/list of recurrent genes and mutations recurrently.txt
 # -o   $outpath  -b ../../meta_data
 
-	parser.add_option("-g","--GeneF",
-					  dest = "GeneF",
-					  default = "",
-					  metavar = "file",
-					  help = "ref genome file .  [required]")
-
-	parser.add_option("-o","--out_P",
-					  dest = "out_P",
-					  default = "",
-					  metavar = "path",
-					  help = "output stat file Path of snv Freq distribution.  [required]")
-
-	parser.add_option("-m","--MutationsF",
-					  dest = "MutationsF",
-					  default = "",
-					  metavar = "path",
-					  help = "Region File.  [required]")
-
-	parser.add_option("-b","--blastResultP",
-					  dest = "blastResultP",
-					  default = "",
-					  metavar = "path",
-					  help = "blast Result P.  [required]")
-
-
 
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
