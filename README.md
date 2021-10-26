@@ -26,8 +26,9 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 - meta-data 
 
-  1. reference genomes used in the analysis
-  2. samples' information file
+  1. referece-genome，reference genomes used in the analysis
+  2. assembly-genomes，genomes assembled by SPAdes
+  3. blastn results of recurrently mutated genes (blast to NCBI nt database)
 
 - results:  The results from the 
 
