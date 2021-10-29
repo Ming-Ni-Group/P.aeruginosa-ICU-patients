@@ -26,31 +26,31 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 - meta-data 
 
-  1. referece-genome，reference genomes used in the analysis
-  2. assembly-genomes，genomes assembled by SPAdes
+  1. referece-genome，all the reference genomes used in the analysis
+  2. assembly-genomes，genomes of P. aeruginosa isolates assembled by SPAdes.
   3. blastn results of recurrently mutated genes (blast to NCBI nt database)
 
-- results:  The results from the 
+- results:  result files for figure visualization and analysis 
 
-- scripts: for analysis and figures plot
+- scripts: script files for analysis
 
 ## SNPs calling and annotation
 
 1. Map the NGS reads to the reference genome (snakemake pipeline):
 
-   `snakemake -s  NGS_map_PAO1-pipeline.py -p `
+   `snakemake -s  scripts/analysis/NGS_map_PAO1-pipeline.py -p `
 
 2. SNPs calling (snakemake pipeline):
 
-   `snakemake -s iSNV_calling-pipeline.py -p ` 
+   `snakemake -s scripts/analysis/iSNV_calling-pipeline.py -p ` 
    
-   This script is used to call the SNPs , generate the summary state of the iSNVs and SNPs
+   This script is used to call the SNPs and generate the summary file of the iSNVs and SNPs
    
 3. Annotation of SNPs  by using SnpEff :
 
-   - Convert the iSNVs and SNP table into vcf format(VCFv4.1) : 
+   - Convert the table obtained from "iSNV-calling" pipeline into vcf format(VCFv4.1) : 
      
-     `python  iSNVTable_2_vcf_allsample.py  -i  $   -o $allsamplesVcfPath   -r   $ref_ID `
+     `python  scripts/analysis/iSNV_calling/iSNVTable_2_vcf_allsample.py  -i  $   -o $allsamplesVcfPath   -r   $ref_ID `
      
    - Annoting the iSNVs and SNPs :
      
@@ -60,7 +60,7 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 - cut the ref genome to 150bp simulation sequences by step 1:
 
-  `python  PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s $cutStep -l $readLength `
+  `python  scripts/analysis/PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s $cutStep -l $readLength `
 
 - align the simulated reads to the reference genome using blastn
 1. build the database for blast
@@ -68,52 +68,42 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 2. Alignment using blastn
 `blastn -db  $databaseID  -query  $simmulate_reads_fastaFile   -outfmt 6 -num_threads 4`
 - Find the regions that may be repeat regions of the reference genome
-  `python 20210405-PA-simulateReads-mapToPArefAE004091-filt-RepeatRegion.py -i $blastOutfile  -o $output_file(PA.RepeatRegion-Cov30-identy60.Posi.txt) -r $referenceGenomeID `
+  `python scripts/analysis/20210405-PA-simulateReads-mapToPArefAE004091-filt-RepeatRegion.py -i $blastOutfile  -o $output_file(PA.RepeatRegion-Cov30-identy60.Posi.txt) -r $referenceGenomeID `
   
 - map the  simulation reads to the PAO1 reference genome 
 
-  `snakemake -s simuReads_mapTo_PARefAE0049-pipeline.py`
+  `snakemake -s scripts/analysis/simuReads_mapTo_PARefAE0049-pipeline.py -p`
 
-## Identity the homo regions with other bacteria
+## Identification of homologous regions with other bacteria in PAO1 genome 
 - Cut the ref genome to 150bp simulate sequences:
-  `python  PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s 1 -l 150 `
+  `python  scripts/analysis/PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s 1 -l 150 `
   
 - Map the simulate sequences to the reference genomes of other bacteria
 
-  `snakemake -s simuPA_mapTo_allBacteriaRefGnms-pipeline.py`
+  `snakemake -s scripts/analysis/simuPA_mapTo_allBacteriaRefGnms-pipeline.py`
 
-- Find the homologous regions between the PAO1 reference genome of P.aeruginosa  and the reference genomes of other bacteria
-`python PA-simulateReads-find-homoRegions.py -i $bamFile_simulateReadsMapToOtherbacteriaGenome -o $output_file -r $reference_ID`
+- Identify the homologous regions between the PAO1 reference genome of P.aeruginosa  and the reference genomes of other bacteria
+`python scripts/analysis/PA-simulateReads-find-homoRegions.py -i $bamFile_simulateReadsMapToOtherbacteriaGenome -o $output_file -r $reference_ID`
 
 
 ## Phylogenetic analysis
 
-- Phylogenetic analysis
+- Phylogenetic analysis of samples based on the SNPs
 
-`raxmlHPC-PTHREADS -s $aligned_seq_file -n raxmltree_result -m GTRGAMMAI -f a -x 12345 -N 1000 -p 123456 -T 24 -k`
+`raxmlHPC-PTHREADS -s $aligned_seq_file -n raxmltree_result ­-m ASC_GTRGAMMA
+­­--asc­-corr=felsenstein -f a -x 12345 -N 1000 -p 123456 -T 24 -k`
 
-
-## Genome assembly
-
-genome assembly was conducted by using Spades:
-
-`spades.py -o  $output_path  -t 30  -k 21,33,45,55,67,77,89,99,103,111,115,127  --careful  -1  $reads_R1   -2   $reads_R2`
+- Phylogenetic analysis of core-genome sequences of samples and the public genomes
+`fasttree -nt -gtr $aligned_sequence_file `
 
 
 
-## Identification of indels and structural variations
-Analysis was conducted based on the alignment file of the NGS reads
+## The epidemic analysis of recurrent mutations in this study among public databases 
 
-- Indels calling with Pindel:
+- Align the recurrently mutated gene sequences to the sequences of nt database by using NCBI blast program
 
-  `snakemake -s `
-
-- Indels calling with Delly
- 
-
-- Filt the Indels (shared by both results of the two softwares)
-
-
+- Filter the public sequences that have the same mutation with the recurrently mutated genes
+scripts/analysis/find-the-Mutations-from -blastn-results.py
 
 ## Citation
 
