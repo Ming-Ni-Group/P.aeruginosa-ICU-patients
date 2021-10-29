@@ -34,19 +34,19 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 - scripts: for analysis and figures plot
 
-## iSNVs and SNPs calling and annotation
+## SNPs calling and annotation
 
 1. Map the NGS reads to the reference genome (snakemake pipeline):
 
    `snakemake -s  NGS_map_PAO1-pipeline.py -p `
 
-2. iSNVs and SNPs calling (snakemake pipeline):
+2. SNPs calling (snakemake pipeline):
 
    `snakemake -s iSNV_calling-pipeline.py -p ` 
    
-   This script is used to call the iSNVs and SNPs , generate the summary state of the iSNVs and SNPs
+   This script is used to call the SNPs , generate the summary state of the iSNVs and SNPs
    
-3. Annotation of iSNVs and SNPs  by using SnpEff :
+3. Annotation of SNPs  by using SnpEff :
 
    - Convert the iSNVs and SNP table into vcf format(VCFv4.1) : 
      
