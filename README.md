@@ -90,10 +90,11 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 - Phylogenetic analysis of samples based on the SNPs
 
-`raxmlHPC-PTHREADS -s $aligned_seq_file -n raxmltree_result ­-m ASC_GTRGAMMA
-­­--asc­-corr=felsenstein -f a -x 12345 -N 1000 -p 123456 -T 24 -k`
+`raxmlHPC-PTHREADS -s $aligned_seq_file -n raxmltree_result -m ASC_GTRGAMMA
+--asc-corr=felsenstein -f a -x 12345 -N 1000 -p 123456 -T 24 -k`
 
 - Phylogenetic analysis of core-genome sequences of samples and the public genomes
+
 `fasttree -nt -gtr $aligned_sequence_file `
 
 
