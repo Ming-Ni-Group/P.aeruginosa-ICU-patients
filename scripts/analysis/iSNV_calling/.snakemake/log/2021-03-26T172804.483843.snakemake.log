@@ -1,5 +1,0 @@
-The flag 'directory' used in rule consensusGnm_prokkaAnno is only valid for outputs, not inputs.
-Building DAG of jobs...
-MissingInputException in line 241 of /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/iSNV_calling-pipeline.py:
-Missing input files for rule iSNV_snvNumCount_noSNV:
-/shared/liuhj/tonglv/process/20210325-nt-Filt-Ecoli/PA.accumulateReads.EcoliHomoPosi.txt

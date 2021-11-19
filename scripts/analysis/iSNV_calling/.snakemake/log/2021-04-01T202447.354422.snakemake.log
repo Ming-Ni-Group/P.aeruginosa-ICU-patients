@@ -1,4 +1,0 @@
-The flag 'directory' used in rule consensusGnm_prokkaAnno is only valid for outputs, not inputs.
-Building DAG of jobs...
-Nothing to be done.
-Complete log: /shared/liuhj/tonglv/ICU_tonglv_scripts/iSNV_calling_bwa2_AE004091.2/.snakemake/log/2021-04-01T202447.354422.snakemake.log
