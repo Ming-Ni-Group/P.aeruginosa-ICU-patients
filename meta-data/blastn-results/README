@@ -1,0 +1,23 @@
+
+The files contained in this folder are the blast results of recurrently mutated genes in this study to the NCBI nt database.Find the gene or genome sequences in the database that with the same mutation 
+
+
+
+
+The genomes and genes that have the same recurrently mutation can be found by the script (../../scripts/Mutation_from_blast/Find-mutations-from-blast.py).
+usage :
+    "python Find-mutations-from-blast.py   -h "  for help
+    "python  Find-mutations-from-blast.py  -g $GeneF -o $outPath  -m $Mutation_file  -b $blastResultPath "
+    For example   -g  ../../meta-data/blastn-results/PAO1.sequence-genes.txt   -o   ../../meta-data/blastn-results/  -m   ../../meta-data/blastn-results/recurrent-genes-mutations.txt  -b ../../meta-data/blastn-results/:
+
+
+The file "list of recurrent genes and mutations recurrently.txt" lists all the recurrent mutated genes in this study.
+
+The file "PAO1.sequence-genes.txt" lists all the genes of the reference PAO1 strain 
+
+
+
+
+
+
+
