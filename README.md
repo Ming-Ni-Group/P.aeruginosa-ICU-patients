@@ -27,8 +27,9 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 - meta-data 
 
   1. referece-genome，all the reference genomes used in the analysis
-  2. assembly-genomes，genomes of P. aeruginosa isolates assembled by SPAdes.
-  3. blastn results of recurrently mutated genes (blast to NCBI nt database)
+  2. clean-genome-seqs，genomes of P. aeruginosa isolates assembled by SPAdes,the contaminated sequences of other bacteria have been removed by using blast.
+  3. blastn-results,blast results of recurrently mutated genes by using online BLAST(blast to NCBI nt database). The folder contains the alignments files of sequences and other files that are used to find the mutations.
+  4. samp-info, meta-data of the samples
 
 - results:  result files for figure visualization and analysis 
 
@@ -38,11 +39,11 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 1. Map the NGS reads to the reference genome (snakemake pipeline):
 
-   `snakemake -s  scripts/analysis/NGS_map_PAO1-pipeline.py -p `
+   `snakemake -s  scripts/iSNV_calling/NGS_map_PAO1-pipeline.py -p `
 
 2. SNPs calling (snakemake pipeline):
 
-   `snakemake -s scripts/analysis/iSNV_calling-pipeline.py -p ` 
+   `snakemake -s scripts/iSNV_calling/iSNV_calling-pipeline.py -p ` 
    
    This script is used to call the SNPs and generate the summary file of the iSNVs and SNPs
    
@@ -50,7 +51,7 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
    - Convert the table obtained from "iSNV-calling" pipeline into vcf format(VCFv4.1) : 
      
-     `python  scripts/analysis/iSNV_calling/iSNVTable_2_vcf_allsample.py  -i  $   -o $allsamplesVcfPath   -r   $ref_ID `
+     `python  scripts/iSNV_calling/iSNVtable_2_vcf/iSNVTable_2_vcf_allsample.py  -i  $   -o $allsamplesVcfPath   -r   $ref_ID `
      
    - Annoting the iSNVs and SNPs :
      
@@ -60,7 +61,7 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 
 - cut the ref genome to 150bp simulation sequences by step 1:
 
-  `python  scripts/analysis/PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s $cutStep -l $readLength `
+  `python  scripts/Filter-genomeRegion/PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s $cutStep -l $readLength `
 
 - align the simulated reads to the reference genome using blastn
 1. build the database for blast
@@ -68,27 +69,27 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 2. Alignment using blastn
 `blastn -db  $databaseID  -query  $simmulate_reads_fastaFile   -outfmt 6 -num_threads 4`
 - Find the regions that may be repeat regions of the reference genome
-  `python scripts/analysis/20210405-PA-simulateReads-mapToPArefAE004091-filt-RepeatRegion.py -i $blastOutfile  -o $output_file(PA.RepeatRegion-Cov30-identy60.Posi.txt) -r $referenceGenomeID `
+  `python scripts/Filter-genomeRegion/20210405-PA-simulateReads-mapToPArefAE004091-filt-RepeatRegion.py -i $blastOutfile  -o $output_file(PA.RepeatRegion-Cov30-identy60.Posi.txt) -r $referenceGenomeID `
   
 - map the  simulation reads to the PAO1 reference genome 
 
-  `snakemake -s scripts/analysis/simuReads_mapTo_PARefAE0049-pipeline.py -p`
+  `snakemake -s scripts/Filter-genomeRegion/simuReads_mapTo_PARefAE0049-pipeline.py -p`
 
 ## Identification of homologous regions with other bacteria in PAO1 genome 
 - Cut the ref genome to 150bp simulate sequences:
-  `python  scripts/analysis/PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s 1 -l 150 `
+  `python  scripts/Filter-genomeRegion/PA-refGnm_cutToSimmulateReads.py -r $refGnm -o $outputP -s 1 -l 150 `
   
 - Map the simulate sequences to the reference genomes of other bacteria
 
-  `snakemake -s scripts/analysis/simuPA_mapTo_allBacteriaRefGnms-pipeline.py`
+  `snakemake -s scripts/Filter-genomeRegion/simuPA_mapTo_allBacteriaRefGnms-pipeline.py`
 
 - Identify the homologous regions between the PAO1 reference genome of P.aeruginosa  and the reference genomes of other bacteria
-`python scripts/analysis/PA-simulateReads-find-homoRegions.py -i $bamFile_simulateReadsMapToOtherbacteriaGenome -o $output_file -r $reference_ID`
+`python scripts/Filter-genomeRegion/PA-simulateReads-find-homoRegions.py -i $bamFile_simulateReadsMapToOtherbacteriaGenome -o $output_file -r $reference_ID`
 
 
 ## Phylogenetic analysis
 
-- Phylogenetic analysis of samples based on the SNPs
+- Phylogenetic analysis of samples based on the SNPs(correct the tree with RAxML )
 
 `raxmlHPC-PTHREADS -s $aligned_seq_file -n raxmltree_result -m ASC_GTRGAMMA
 --asc-corr=felsenstein -f a -x 12345 -N 1000 -p 123456 -T 24 -k`
@@ -104,7 +105,7 @@ Pseudomonas aeruginosa (P. aeruginosa) is a common opportunistic pathogen that i
 - Align the recurrently mutated gene sequences to the sequences of nt database by using NCBI blast program
 
 - Filter the public sequences that have the same mutation with the recurrently mutated genes
-scripts/analysis/find-the-Mutations-from -blastn-results.py
+scripts/Mutation_from_blast/Find-mutations-from-blast.py
 
 ## Citation
 
@@ -113,6 +114,8 @@ If you use data, results or conclusion from this work, please cite:
 
 
 ## Acknowledgement
+
+
 
 
 
